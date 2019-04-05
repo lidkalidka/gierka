@@ -1,3 +1,5 @@
+var s_burger = document.querySelector(".icon-menu");
+var s_ul = document.querySelector("ul.info");
 
 var s_p1 = document.querySelector(".player1");
 var s_p2 = document.querySelector(".player2");
@@ -9,9 +11,13 @@ var s_reset = document.querySelector("#reset");
 
 var sc1 = 0;
 var sc2 = 0;
-var win_num;
+var win_num = parseInt(s_numDisplay.textContent, 10);;
 
 var game = true;
+
+s_burger.addEventListener("click", function(){ 
+    s_ul.classList.toggle("hide");
+});
 
 s_num.addEventListener("change", function(){
     reset();

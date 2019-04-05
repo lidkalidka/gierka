@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
@@ -7,6 +7,14 @@
 	<link rel="stylesheet" href="fontello/css/fontello.css">
 </head>
 <body>
+    <header>
+        <i class="icon-menu"></i>
+        <ul class="info">
+            <li>W zabawie udział bierze dwóch graczy</li>
+            <li>Wygrywa gracz, który jako pierwszy osiągnie określoną liczbę punktów</li>
+            <li>Zawodnicy na zmianę losują randomową liczbę z przedziału 0 - 5</li>
+        </ul>
+    </header>
     <div class="container">
         <div id="part1">
             <div class="player1"><i class="icon-user"></i>Gracz 1</div>
@@ -15,13 +23,13 @@
             <div class="player2"><i class="icon-user"></i>Gracz 2</div>
         </div>
         <div id="num">
-                <p>Ilość punktów dająca zwycięstwo (min 1) : <span id="number"> </span></p>
+                <p>Ilość punktów dająca zwycięstwo (min 1) : <span id="number">30</span></p>
                 <input type="number" name="number" min="1" max="1000">
         </div>
         <div id="score"><span id="display_p1">0</span> : <span id="display_p2">0</span></div>
         <div id="reset">Reset</div>
     </div>
-
+    <footer> All rights reserved &copy; 2019 Lidka G. </footer>
 
 <script src="main.js"></script>
 </body>

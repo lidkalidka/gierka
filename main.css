@@ -1,11 +1,49 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
+
 body{
     background-image: radial-gradient(#111, #eee);
+    background-repeat: no-repeat;
     margin: 0;
+    padding: 140px 0 0 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+  
 }
+
+header{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+ul.info{
+    margin: 10px;
+    padding: 0;
+    list-style-type: none;
+    color: #222;
+    font-weight: bold;
+    height: 100px;
+    overflow: hidden; 
+    transition: height 1s;
+}
+ul.info.hide{
+    height: 0px;
+    transition: height 1s;
+}
+
+ul.info li{
+    padding: 3px 0;
+}
+
 .container{
     width: 700px;
     height: 450px;
-    margin: 100px auto;
+    margin: 0 auto;
     border: 1px solid #ccc;
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +150,11 @@ body{
     font-size: 30px;
 }
 
+.icon-menu{
+    color: #444;
+    font-size: 30px;
+}
+
 .winner{
     color: #cc3333;
     font-weight: bold;
@@ -124,4 +167,18 @@ body{
 .nonActive{
     pointer-events: none;
     background-color: white;
+}
+
+footer{
+    color: #222;
+    background-color: #aaa;
+    text-align: center;
+    font-weight: bold;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
