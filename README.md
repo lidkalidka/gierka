@@ -13,3 +13,6 @@ Project is finished.
 
 ## Inspiration
 Project based on similar games form courses on Udemy platform - one by Colt Steele and other by Jonas Schmedtmann.
+
+## Contact
+Created by Lidka G. lidkadev@gmail.com
